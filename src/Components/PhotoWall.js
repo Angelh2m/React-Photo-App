@@ -10,6 +10,11 @@ import PropTypes from 'prop-types';
 
 function PhotoWall(props) {
   return(
+          <div>
+            <a onClick={props.onNavigate} href="#AddPhoto" >click me</a>
+          <button
+           
+          className="addIcon"> </button>
             <div className='photoGrid'>
                 {/* Map trough all the posts */}
                 {/* Render the single component */}
@@ -17,6 +22,7 @@ function PhotoWall(props) {
                   <Photo key={index} onRemovePhoto={props.onRemovePhoto} post={post}/>)
                 )}
             </div>
+          </div>
         )
 };
 
