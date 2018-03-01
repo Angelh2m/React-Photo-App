@@ -1,6 +1,7 @@
 import React from 'react';
 import Photo from './Photo';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 
 
@@ -11,10 +12,10 @@ import PropTypes from 'prop-types';
 function PhotoWall(props) {
   return(
           <div>
-            <a onClick={props.onNavigate} href="#AddPhoto" >click me</a>
-          <button
-           
-          className="addIcon"> </button>
+            <Link  
+            className="addIcon"
+            to="/AddPhoto" ></Link>
+
             <div className='photoGrid'>
                 {/* Map trough all the posts */}
                 {/* Render the single component */}
