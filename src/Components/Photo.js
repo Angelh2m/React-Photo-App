@@ -12,13 +12,16 @@ function Photo(props) {
                 <figcaption> <p> {post.description}  </p> </figcaption>
                 <div className="button-container">
                 <button onClick={() => {
-                  props.onRemovePhoto(post)
+                  props.removePost(1)
                 }} className="remove-button" >Remove</button>
                 </div>
             </figure>
         )
 }
 
+// PhotoWall.propTypes = {
+//     posts: PropTypes.array.isRequired,  
+// }
 
 
 export default Photo;
